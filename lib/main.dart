@@ -29,11 +29,22 @@ class HomeActivity extends StatelessWidget{
         backgroundColor: Colors.blue,
       ),
       body: const Center(
-        child: LinearProgressIndicator(
-          color: Colors.pink,
-          backgroundColor: Colors.grey,
-          minHeight: 50,
-
+          child: Icon(Icons.star, // Assuming `Icons.star` is an IconData for the star icon
+    size: 48.0, // Set the size of the icon
+    // fill: true, // Some boolean property, adjust based on your implementation
+    // weight: FontWeight.bold, // Some FontWeight property
+    grade: 1, // Some int property
+    opticalSize: 2.0, // Some double property
+    color: Colors.blue, // Set the color of the icon
+    shadows: [ // List of shadows, adjust based on your implementation
+    Shadow(
+    color: Colors.black,
+    offset: Offset(2.0, 2.0),
+    blurRadius: 3.0,
+    ),
+    ],
+    semanticLabel: 'Star Icon', // Set an accessibility label
+    textDirection: TextDirection.ltr, // Set the text direction),
         )
       ),
     );
