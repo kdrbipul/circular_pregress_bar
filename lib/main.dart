@@ -29,14 +29,12 @@ class HomeActivity extends StatelessWidget{
         backgroundColor: Colors.blue,
       ),
       body: const Center(
-        child: CircularProgressIndicator(
+        child: LinearProgressIndicator(
           color: Colors.pink,
           backgroundColor: Colors.grey,
-          strokeWidth:10,
-          strokeCap: StrokeCap.round,
-          semanticsLabel: 'Loading',
+          minHeight: 50,
 
-        ),
+        )
       ),
     );
   }
